@@ -1,0 +1,62 @@
+#header
+{
+    margin-left: 850px;
+    margin-top: -500px;
+    color: rgb(211, 223, 41);font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+#ufo
+{
+    text-align: center;
+    margin-left: 720px;
+    margin-top: 0px;
+    color: rgb(172, 41, 223);font-family: 'Yeon Sung';font-size: 20px;letter-spacing: 10px;
+}
+
+#ift
+{
+    margin-left: 900px;
+    margin-top: 0px;
+    color: rgb(41, 223, 223);font-family: 'Yeon Sung';font-size: 20px;letter-spacing: 10px;
+}
+
+#btn_1
+{
+    margin-left: 930px;
+    margin-top: 0px;
+  font-size: 20px;letter-spacing: 10px;
+}
+
+#user_name
+{
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 860px;
+    text-align: center;
+    color: rgb(18, 206, 18);
+}
+
+
+#ttt
+{
+    margin-right: 900px;
+    margin-top: 0px;
+    color: rgb(211, 223, 41);font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;
+}
+
+#fff
+{
+    
+    margin-top: 0px;
+    color:black;font-family: 'bold';font-size: 25px;letter-spacing: 10px;
+}
+
+
+#tick
+{
+    width: 24px;
+}

@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>Car-info-SUZUKI_PAGE</title>
+         
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="suzuki.css">
+
+    </head>
+
+    <body>
+        <button style="margin-left: 1200px; margin-top: 20px;" id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">  Log-Out</button>
+        <center>
+        <h2 id="ttt"><u>Car - Choose<sup><img style="width: 110px;" src="car.png"></sup></u></h2>
+        <br>
+     <button style="margin-top: -190px;" class="glyphicon glyphicon-cog btn btn-warning" onclick="set()"> Settings</button>
+    </center>
+    <button style="margin-left: 850px; font-size: 17px;" id="nextH" onclick="NextH();" class="glyphicon glyphicon-hand-right btn btn-primary "> Next Company </button>
+    <br>
+        <h3 style="margin-left:530px; margin-top:-50px;" id="user_name"></h3>
+        
+            <br><br>
+            <center>
+        <h4 id="fff">MARUTI - SUZUKI<sup><img style="width: 40px;"" src="suzuki.png"></sup></h4>
+       <br>
+        <h5 style="font-size: 20px; color:gray;">3 best results from MARUTI - SUZUKI</h5>
+    </center>
+   <center>
+        <img style="width: 190px; margin-right: 1000px; padding-top: 90px;" src="alto.png">
+        <br><br>
+        <h4 style="margin-left: -1000px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:brown;">ALTO</h4>
+    </center>
+    <center>
+        <h4 style="margin-left: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:brown;">BALENO</h4>
+    </center>
+    <center>
+        <h4 style="margin-left: 970px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:brown;">XL6</h4>
+    </center>
+   
+       <br>
+        <p5 class="text-success" style="font-size: 17px; margin-left: 20px; text-align: center;"> • Best car for covering range of 1,00,000 km and also cheap!!</p5>
+        <p5  class="text-success" style="font-size: 17px; margin-left: 90px; padding-bottom: -900px;"> • Affordable and fuel efficient!!</p5>
+        <p5  class="text-success" style="font-size: 17px; margin-left: 250px; padding-bottom: -900px;"> • Excellent Comfort, for Hills!!</p5>
+        <br>
+       
+        <img src="4.5 star rating.png" style="width: 120px; margin-left: 620px; margin-bottom: -90px;">
+        <img src="4.7.png" style="width: 120px; margin-left: 1080px; margin-bottom: -90px;">
+        <br>
+   
+        <p2 style="margin-left: 120px;">
+            <span style= "color: rgb(204, 204, 48); font-size: 25px;"  class="glyphicon glyphicon-star"></span>
+            <span style="color: rgb(204, 204, 48); font-size: 25px;" class="glyphicon glyphicon-star"></span>
+            <span style="color: rgb(204, 204, 48); font-size: 25px;" class="glyphicon glyphicon-star"></span>
+            <span style="color: rgb(204, 204, 48); font-size: 25px;" class="glyphicon glyphicon-star"></span>
+            <span style="color: rgb(204, 204, 48); font-size: 25px;" class="glyphicon glyphicon-star-empty"></span>
+            
+       </p2>
+    <br>
+       <h4 style="margin-left: 120px; padding-bottom: -1000px; font-family: 'Caveat', cursive; color:orangered; font-size: 25px;">• MILEAGE</h4>
+      
+       <br>
+       <h4 class="text-danger" style="margin-left: 80px; padding-bottom: -1000px;">~ Petrol - 22.05 km/l</h4>
+       <h4 class="text-danger" style="margin-left: 80px; padding-bottom: -1000px;">~ Diesel - 31.59 km/l</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Fuel Type - Petrol</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Engine Displacement (cc) - 998</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Max Power (bhp@rpm) - 40.36bhp@6000rpm</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Seating Capacity - 5</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Boot Space (Litres) - 177</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Fuel Tank Capacity - 35.0</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Body Type - Hatchback</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Showroom Price - Rs. 2.99 - 4.60 Lakh*</h4>
+      
+
+
+
+
+       <img style="width: 310px; margin-left: 530px; margin-top: -1010px;" src="baleno.png">
+       
+      
+       <h4 style="margin-left: 640px; margin-top: -660px; font-family: 'Caveat', cursive; color:orangered; font-size: 25px;">• MILEAGE</h4>"
+       <br>
+       <h4 class="text-danger" style="margin-left: 550px; padding-bottom: -660px;">~ Petrol - 21.4 km/l</h4>
+       <h4 class="text-danger" style="margin-left: 550px; padding-bottom: -660px;">~ Diesel - 27.39 km/l</h4>
+       <br>
+       
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Fuel Type - Petrol</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -660px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Engine Displacement (cc) - 1197</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Max Power (bhp@rpm) - 83bhp@6000rpm</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Seating Capacity - 5</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Boot Space (Litres) - 339</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Fuel Tank Capacity - 37.0</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Body Type - Premium Hatchback</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Showroom Price - Rs. 5.97 - 9.27 Lakh*</h4>
+
+
+
+
+
+       <img style="width: 310px; margin-left: 1000px; margin-top: -1010px;" src="xl6.png">
+      
+       <h4 style="margin-left: 1100px; margin-top: -660px; font-family: 'Caveat', cursive; color:orangered; font-size: 25px;">• MILEAGE</h4>"
+       <br>
+       <h4 class="text-danger" style="margin-left: 1050px; padding-bottom: -660px;">~ Petrol - 17.99 km/l</h4>
+       <h4 class="text-danger" style="margin-left: 1050px; padding-bottom: -660px;">~ Diesel - Not Available</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1050px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Fuel Type - Petrol</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1050px; padding-bottom: -660px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Engine Displacement (cc) - 1462</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 1050px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Max Power (bhp@rpm) - 103.2bhp@6000rpm</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 1050px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Seating Capacity - 6</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1050px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Boot Space (Litres) - 209</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1050px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Fuel Tank Capacity - 45.0</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1050px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Body Type - Wagon</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 980px; padding-bottom: 100px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Showroom Price - Rs. 9.94 - 11.73 Lakh*</h4>
+       <br><br>
+       <div style="background-color: rgb(110, 94, 94); padding-top: 50px; padding-bottom: 50px;">
+       <label style="color: black; margin-left: 30px;">  •  THE INFORMATION SHOWN HERE IS DAILY UPDATED AND THUS, SHOWS THE REAL INFORMATION.&nbsp; <sup><img style="width: 110px;" src="signature.png"></sup>  </label>
+       <br>
+       <h10 style="margin-left: 10px;">Location Made - Mahurgad, Maharashtra, India.</h10>
+       <br><br>
+       <h11 style="margin-left: 10px;">Creator - Prathmesh Kale.</h11>
+       <br><br><br><br>
+       <h4 style="margin-left : 600px; color:black";>❤️ MADE WITH LOVE ❤️</h4>
+       <br>
+       <h4 style="margin-left : 495px; color:black";>❤️ WITH RESPECT AND THANKS TO WHITEHAT JR ❤️</h4>
+    </div>
+
+
+
+
+    <script src="suzuki.js"></script>
+    </body>
+</html>

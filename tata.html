@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>Car-info-TATA_PAGE</title>
+         
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="suzuki.css">
+
+    </head>
+    <body>
+        <button style="margin-left: 1200px; margin-top: 20px;" id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">  Log-Out</button>
+        <center>
+        <h2 id="ttt"><u>Car - Choose<sup><img style="width: 110px;" src="car.png"></sup></u></h2>
+        <br>
+     
+    </center>
+    <button style="margin-left: 850px; font-size: 17px;" id="nextT" onclick="NextT();" class="glyphicon glyphicon-hand-right btn btn-primary "> Next Company </button>
+    <button style="margin-left: 300px; font-size: 17px; margin-top: -43px;" id="backS" onclick="BackS();" class="glyphicon glyphicon-hand-left btn btn-primary "> Previous Company </button>
+    <br>
+        <h3 style="margin-left:530px; margin-top:-50px;" id="user_name"></h3>
+        
+            <br><br>
+            <center>
+        <h4 id="fff">TATA<sup><img style="width: 90px;"" src="tata.png"></sup></h4>
+        <br>
+        <h5 style="font-size: 20px; color:gray;">3 best results from TATA</h5>
+    </center>
+   <center>
+       <br><br><br>
+        <img style="width: 360px; margin-right: 1000px; padding-bottom: -900px;" src="tiago.png">
+        
+        <h4 style="margin-left: -1000px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:brown;">TIAGO</h4>
+    </center>
+    <center>
+        <h4 style="margin-left: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:brown;">NEXON</h4>
+    </center>
+    <center>
+        <h4 style="margin-left: 950px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:brown;">HARRIER</h4>
+    </center>
+    </center>
+   
+       <br>
+        <p5 class="text-success" style="font-size: 17px; margin-left: 20px; text-align: center;"> • Made for family , Very Comfortable & Safe!!</p5>
+        <p5  class="text-success" style="font-size: 17px; margin-left: 160px; padding-bottom: -900px;"> • First to score 5 Stars in GLOBAL NCAP!!</p5>
+        <p5  class="text-success" style="font-size: 17px; margin-left: 70px; padding-bottom: -900px;"> • Best for long trips it's well built and has good space too!!</p5>
+        <br>
+       
+        <img src="4.5 star rating.png" style="width: 120px; margin-left: 620px; margin-bottom: -90px;">
+        <img src="4.7.png" style="width: 120px; margin-left: 1080px; margin-bottom: -90px;">
+        <br>
+   
+        <p2 style="margin-left: 120px;">
+            <img style="width: 120px; margin-left: -15px;" src="4.5 star rating.png">
+       </p2>
+    <br>
+       <h4 style="margin-left: 120px; padding-bottom: -1000px; font-family: 'Caveat', cursive; color:orangered; font-size: 25px;">• MILEAGE</h4>
+      
+       <br>
+       <h4 class="text-danger" style="margin-left: 80px; padding-bottom: -1000px;">~ Petrol - 23.84 km/l</h4>
+       <h4 class="text-danger" style="margin-left: 80px; padding-bottom: -1000px;">~ Diesel - 27.28 km/l</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Fuel Type - Petrol</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Engine Displacement (cc) - 1199</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Max Power (bhp@rpm) - 84.48bhp@6000rpm</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Seating Capacity - 5</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Boot Space (Litres) - 242</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Fuel Tank Capacity - 35.0</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Body Type - Hatchback</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 80px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Showroom Price - Rs. 4.99 - 6.95 Lakh*</h4>
+      
+
+
+
+       <img style="width: 430px; margin-left: 480px; margin-top: -1080px;" src="nexon.png">
+       <h4 style="margin-left: 640px; margin-top: -660px; font-family: 'Caveat', cursive; color:orangered; font-size: 25px;">• MILEAGE</h4>"
+       <br>
+       <h4 class="text-danger" style="margin-left: 550px; padding-bottom: -660px;">~ Petrol - 17.4 km/l</h4>
+       <h4 class="text-danger" style="margin-left: 550px; padding-bottom: -660px;">~ Diesel - 22.4 km/l</h4>
+       <br>
+       
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Fuel Type - Diesel</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -660px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Engine Displacement (cc) - 1497</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Max Power (bhp@rpm) - 108.5bhp@4000rpm</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Seating Capacity - 5</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Boot Space (Litres) - 350</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Fuel Tank Capacity - 44.0</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Body Type - Sport Utility Vehicle</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 550px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Showroom Price - Rs. 7.19 - 12.95 Lakh*</h4>
+
+
+
+
+
+       <img style="width: 330px; margin-left: 1000px; margin-top: -990px;" src="harrier.png">
+      
+       <h4 style="margin-left: 1100px; margin-top: -660px; font-family: 'Caveat', cursive; color:orangered; font-size: 25px;">• MILEAGE</h4>"
+       <br>
+       <h4 class="text-danger" style="margin-left: 1010px; padding-bottom: -660px;">~ Petrol - 15.5 km/l</h4>
+       <h4 class="text-danger" style="margin-left: 1010px; padding-bottom: -660px;">~ Diesel - 17.0 km/l</h4>
+       <br>
+       
+       <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Fuel Type - Diesel</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -660px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Engine Displacement (cc) - 1956</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -660px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Max Power (bhp@rpm) - 167.63bhp@3750rpm</h4>
+        <br>
+        <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Seating Capacity - 5</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Boot Space (Litres) - 425</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Fuel Tank Capacity - 50.0</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; color:orangered; font-size: 25px;"> • Body Type - Sport Utility Vehicle</h4>
+       <br>
+       <h4 class="text-primary" style="margin-left: 1010px; padding-bottom: -1000px;  font-family: 'Caveat', cursive; font-size: 25px;"> • Showroom Price - Rs. 14.29 - 20.81 Lakh*</h4>
+
+
+       <br><br>
+       <div style="background-color: rgb(110, 94, 94); padding-top: 50px; padding-bottom: 50px;">
+       <label style="color: black; margin-left: 30px;">  •  THE INFORMATION SHOWN HERE IS DAILY UPDATED AND THUS, SHOWS THE REAL INFORMATION.&nbsp; <sup><img style="width: 110px;" src="signature.png"></sup>  </label>
+       <br>
+       <h10 style="margin-left: 10px;">Location Made - Mahurgad, Maharashtra, India.</h10>
+       <br><br>
+       <h11 style="margin-left: 10px;">Creator - Prathmesh Kale.</h11>
+       <br><br><br><br>
+       <h4 style="margin-left : 600px; color:black";>❤️ MADE WITH LOVE ❤️</h4>
+       <br>
+       <h4 style="margin-left : 495px; color:black";>❤️ WITH RESPECT AND THANKS TO WHITEHAT JR ❤️</h4>
+    </div>
+
+
+
+
+    <script src="tata.js"></script>
+    </body>
+  
+    </html>
